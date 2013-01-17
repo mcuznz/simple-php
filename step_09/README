@@ -12,6 +12,7 @@ from different files into a group of functions in a single file.
  *  template.php:  the basic html used by all pages (updated).
  *  config.php:    the global config data used by all pages.
  *  model.php:     a group of functions for handling posts
+ *  .htaccess:     Apache config file which sets up our mod_rewrite rule.
 
 ## Files Absent ##
  *  none!

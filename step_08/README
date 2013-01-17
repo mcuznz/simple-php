@@ -21,10 +21,9 @@ it "route" the request.
 This "router" is commonly called a Front Controller, especially in the world of
 PHP frameworks.
 
-Note that this *does* change our URL format slightly - everything is now
-prepended with '/index.php'.  This is a little ugly, but can be easily overcome
-with a little Apache mod_rewrite magic later, making it invisible to your
-visitors.
+Note that this *does* change our URL format.  After setting up a simple Apache
+mod_rewrite url, specifying index.php is redundant.  Now, our index URL is
+simply "/" and our post URLs are "/post?id=X".
 
 
 ## Files Present ##
@@ -34,6 +33,7 @@ visitors.
  *  template.php:  the basic html used by all pages.
  *  config.php:    the global config data used by all pages.
  *  model.php:     a group of functions for handling posts
+ *  .htaccess:     Apache config file which sets up our mod_rewrite rule.
 
 ## Files Absent ##
  *  none!

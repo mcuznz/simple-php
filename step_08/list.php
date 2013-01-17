@@ -7,7 +7,7 @@ ob_start();
 	<h2>Recent Posts:</h2>
 	<ul>
 	<?php foreach ($posts as $post) { ?>
-		<li><a href='/index.php/post?id=<?php echo $post['id']; ?>'><?php echo $post['title']; ?></a></li>
+		<li><a href='post?id=<?php echo $post['id']; ?>'><?php echo $post['title']; ?></a></li>
 	<?php } ?>
 	</ul>
 

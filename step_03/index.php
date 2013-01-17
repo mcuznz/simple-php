@@ -1,6 +1,6 @@
 <?php
 
-include 'global.php';
+include 'postdata.php';
 
 $blogtitle = "A Simple Blog";
 $pagetitle = $blogtitle;

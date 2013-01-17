@@ -11,7 +11,7 @@ function get_all_posts($db) {
 }
 
 function get_post_by_id($db, $id) {
-	if (is_int($id)) {
+	if (is_numeric($id)) {
 		$result = mysql_query('SELECT title, content FROM post WHERE id=' . $id, $db);
 		return mysql_fetch_assoc($result);
 
