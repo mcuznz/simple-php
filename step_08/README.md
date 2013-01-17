@@ -18,8 +18,15 @@ Certainly there's something we can do to prevent this painful repetition, right?
 The solution is to pass every single page load through a common script, and let
 it "route" the request.
 
-This "router" is commonly called a Application Controller, especially in the world of
-PHP frameworks.
+This "router" is commonly called a Application Controller, especially in the
+world of PHP frameworks.
+
+An Apache .htaccess file is required to route all requests through the
+Application Controller.  htaccess files are powerful configuration files that
+you can do a lot of interesting things with - and likewise, you can break things
+very badly by configuring one incorrectly.  Using these files could easily be
+the topic of a separate presentation - for now, please just accept that the
+provided htaccess file works.
 
 Note that this *does* change our URL format.  After setting up a simple Apache
 mod_rewrite url, specifying index.php is redundant.  Now, our index URL is
