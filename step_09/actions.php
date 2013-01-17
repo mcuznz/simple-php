@@ -14,7 +14,7 @@ function show_post($db, $pagetitle, $id) {
 
 		<?php
 	} else {
-		$pagetitle = $config['blogtitle'] . ' - ' . $post['title'];
+		$pagetitle = $pagetitle . ' - ' . $post['title'];
 		?>
 
 		<h2><?php echo $post['title']; ?></h2>
