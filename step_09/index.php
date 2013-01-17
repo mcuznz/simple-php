@@ -14,7 +14,7 @@ $uri = preg_replace('/\/step_\d\d/', '', $uri);
 if ($uri == '/') {
 	$response = show_list($db, $pagetitle);
 } elseif (strpos($uri, '/post') !== false && isset($_GET['id'])) {
-	$response = show_post($db, $pagetitle);
+	$response = show_post($db, $pagetitle, $_GET['id']);
 } else {
 	$response = array(
 		'pagetitle' => $pagetitle . " - Error",

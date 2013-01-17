@@ -4,7 +4,7 @@
 
 Our output code is *much* more readable now thanks to output buffering, but the
 code is anything but DRY right now!  Both index.php and post.php start and end
-with the code few lines:
+with the same few lines of code:
 
     include 'config.php';
     include 'model.php';

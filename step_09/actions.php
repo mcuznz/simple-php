@@ -1,8 +1,8 @@
 <?php
 
-function show_post($db, $pagetitle) {
+function show_post($db, $pagetitle, $id) {
 
-	$post = get_post_by_id($db, $_GET['id']);
+	$post = get_post_by_id($db, $id);
 
 	ob_start();
 	if ($post == false) {

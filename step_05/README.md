@@ -3,14 +3,13 @@
 ## STEP 5: Adding a Database ##
 
 Step 4 is definitely DRYer than Step 3 - we're not setting the same variable in
-multiple locations, which is great.  It's time to beef up our little blog and
-make it Database-driven.
+multiple locations, which is great.  Now it's time to beef up our little blog
+and make it Database-driven.
 
 Right now, every page on our site has access to every aspect of every post in
 the blog.  With only 3 posts, this isn't really a big deal - but what happens
 down the road when there's hundreds, even thousands of posts?  We also have to
-manually edit the Post data in a PHP file, which introduces what I like to call
-CLS:
+manually edit the Post data in a PHP file, which introduces what I like to call:
 
 ### Christmas Light Syndrome ###
 In other words: when one goes out, they all go out.  If you make a typo that

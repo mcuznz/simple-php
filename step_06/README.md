@@ -19,11 +19,11 @@ click a link to one of the blog posts, ending up at a URL like:
 
 But what if a malicious user decided to visit this url?
 
-    post.php?id=1;DROP%20TABLE%20posts;
+    post.php?id=1;DROP%20TABLE%20post;
 
 This would result in the following SQL statement:
 
-    SELECT title, content FROM post WHERE id=1;DROP TABLE posts;
+    SELECT title, content FROM post WHERE id=1;DROP TABLE post;
 
 Whoops! There goes your entire Blog Post table.  The solution is to check for a
 reasonable 'id' value before running the SQL query.  As our blog grows, we're

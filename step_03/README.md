@@ -10,7 +10,7 @@ index.php, and two more in post1.php.  All we've really done is isolate the
 surrounding HTML.
 
 If you take a peek at template.php in Step 2, you'll notice we had to add a
-little evaluation code to the <title> tag to make sure both indexes and blog
+little evaluation code to the < title > tag to make sure both indexes and blog
 post titles appeared correctly.
 
 In both index.php and post1.php, we had to escape some quotation marks so our
