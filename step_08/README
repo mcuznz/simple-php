@@ -1,0 +1,39 @@
+# Grow Your Own PHP App #
+
+## STEP 8: The Front Controller ##
+
+Our output code is *much* more readable now thanks to output buffering, but the
+code is anything but DRY right now!  Both index.php and post.php start and end
+with the code few lines:
+
+    include 'config.php';
+    include 'model.php';
+
+    ...
+
+    mysql_close($db);
+    include 'template.php';
+
+Certainly there's something we can do to prevent this painful repetition, right?
+The solution is to pass every single page load through a common script, and let
+it "route" the request.
+
+This "router" is commonly called a Front Controller, especially in the world of
+PHP frameworks.
+
+Note that this *does* change our URL format slightly - everything is now
+prepended with '/index.php'.  This is a little ugly, but can be easily overcome
+with a little Apache mod_rewrite magic later, making it invisible to your
+visitors.
+
+
+## Files Present ##
+ *  index.php:     repurposed - now the front controller.
+ *  post.php:      the single blog post handler.
+ *  list.php:      the blog post list handler (what index.php used to do).
+ *  template.php:  the basic html used by all pages.
+ *  config.php:    the global config data used by all pages.
+ *  model.php:     a group of functions for handling posts
+
+## Files Absent ##
+ *  none!
