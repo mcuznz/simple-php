@@ -25,7 +25,7 @@ function show_post($db, $pagetitle, $id) {
 	$content = ob_get_clean();
 
 	return array('pagetitle' => $pagetitle,
-				 'content' => $content);
+		'content' => $content);
 }
 
 function show_list($db, $pagetitle) {
@@ -45,6 +45,6 @@ function show_list($db, $pagetitle) {
 	$content = ob_get_clean();
 
 	return array('pagetitle' => $pagetitle,
-				 'content' => $content);
+		'content' => $content);
 
 }
