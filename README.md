@@ -9,4 +9,7 @@ We'll be using a simple Blog as our example application.
 
 This is a work in progress.
 
+## January PHPNiagara Meetup ##
+Steps 1 through 9 were discussed at the January PHPNiagara Meetup.
+
 - Mike Cousins / @mcuznz / mcuznz.ca
